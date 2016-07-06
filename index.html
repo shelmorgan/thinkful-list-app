@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Thinkful List App</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="this is a simple website built with google material design">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<title>listCreator03</title>
+
+<link href="http://fonts.googleapis.com/css rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link rel="stylesheet" href="http://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+   <!-- header bar -->
+   <header class="header mdl-layout__header">
+      <div class="mdl-layout__header-row">
+         <!-- Title -->
+         <span class="mdl-layout-title">Thinkful List App</span>
+         <!-- Add spacer, to align navigation to the right -->
+         <div class="mdl-layout-spacer"></div>
+         <!-- Search form -->
+         <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+               <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder mdl-js-textfield">
+               <input class="mdl-textfield__input" type="text" id="search" />
+               <label class="mdl-textfield__label">search...</label>
+               <!--this lable does not show?-->
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <main class="main mdl-layout__content">
+      <!-- Square card -->
+      <div class="mdl-card mdl-shadow--2dp demo-card-square">
+         <div class="mdl-card__title mdl-card--expand">
+            <h2 class="mdl-card__title-text">List Title</h2>
+         </div>
+         <div class="mdl-card__supporting-text">
+            <ul id='itemList'>
+
+            </ul>
+
+            <form id="newItemForm">
+               <input type="text" class="form-control" id="itemDescription" placeholder="New Item" />
+               <button class=' addButton btn mdl-button--accent float-right' id="addButton">+ ADD ITEM</button>
+            </form>
+         </div>
+         <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect">
+          Delete List
+        </a>
+         </div>
+      </div>
+   </main>
+
+</div>
+
+<!--
+<footer class="mdl-mini-footer">
+   <div class="mdl-mega-footer__bottom-section">
+      <div class="mdl-logo">
+         More Information
+      </div>
+      <ul class="mdl-mini-footer__link-list">
+         <li><a href="#">Help</a></li>
+         <li><a href="#">Privacy and Terms</a></li>
+         <li><a href="#">User Agreement</a></li>
+      </ul>
+   </div>
+</footer>
+
+-->
+
+<!--side button -->
+<a href="#" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">+ add list</a>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
